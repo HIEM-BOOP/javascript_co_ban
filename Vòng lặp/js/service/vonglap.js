@@ -14,11 +14,10 @@ function showLog(message, n) {
 // }
 
 function sum(amount){
-    var sum = " "; 
-    for (var i = 1 ; i < amount ; i++) { 
 
-        sum += 'hiêm' + i;
-        console.log(sum);
-    }
-    
+    var sum = 0;
+    for (var i = 1 ; i <= amount ; i++) { 
+        sum = sum + i;
+    }  
+    return sum ;  
 }   
