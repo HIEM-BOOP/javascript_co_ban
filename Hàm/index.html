@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập</title>
+    <script src="js/service/javascipt.js"></script>
+</head>
+
+<body>
+    <script>
+
+    
+        showLog('Tôi Rất thông minh');
+
+        // Bài Sum 
+        showLog('Tổng của hai số là ' + tong(3, 7));
+
+        // Bài trừ
+        showLog('Hiệu của hai số là ' + hieu(10, 5));
+
+        //  Bài nhân
+        showLog('tích của hai số là: ' + tich(2, 5));
+
+        // Bài chia
+        showLog('thương của hai số là: ' + thuong(10, 2));
+
+        // Tính bình phương
+        showLog('binh Phương số a là ' + binhPhuong(4));
+
+
+        // Tìm số lớn nhất
+
+        showLog(max(10, 2));
+
+        //  Tìm số nhỏ nhất
+        showLog(min(10, 2));
+
+        // trung bình số
+        showLog('Trung bình hai số là ' + trungBinh(15, 5));
+
+        // Chia lấy phần dư
+        showLog('Chia lấy phần dư a % b ' + chiaLayDu(12, 5));
+
+        showLog('chia lấy phần dư b%a ' + chiaLayDu(5, 12));
+
+        // Kiểm tra số có chia số còn lại
+
+        /* a % b */
+        coChiaHet(15, 5)
+        /* b % a */
+        coChiaHet(5, 15)
+
+        /* Chu vi hinh chu nhhat */
+        showLog('Chu vi hinh chu nhat la ' + chuViChuNhat(6, 12));
+
+        /* dien tich chu nhat */
+        showLog('dien tich chu nhat la ' + dienTichChuNhat(6, 12));
+
+        /* chu vi hinh tron */
+        showLog('chu vi hinh chu nhay là ' + chuViHinhTron(5));
+
+
+        /* Dien tich hinh tron */
+        showLog('dien tich hinh tron ' + dienTichHinhTron(2));
+
+
+        /* Nối chuổi */
+
+        var S1 = " Chuỗi số 1 ";
+        var S2 = " Chuỗi số 2 ";
+        var S3 = " chuỗi số 3 ";
+        var S4 = " Chuỗi số 4 ";
+        var S5 = " Chuỗi số 5 ";
+        showLog(noiChuoi(S1, S2));
+
+
+        var S12 = noiChuoi(S1, S2);
+
+        var S123 = noiChuoi(S12, S3);
+
+        var S1234 = noiChuoi(S123,S4);
+    
+        var S45 = noiChuoi(S4, S5);
+        var S = noiChuoi(S123, S45);
+        
+        showLog(S);
+
+        /* in Hoa */
+
+        showLog(inHoa(S1));
+        showLog(inHoa(S2));
+        showLog(inHoa(S3));
+        showLog(inHoa(S4));
+        showLog(inHoa(S5));
+
+        showLog(inHoa(S))
+        
+        showLog(coTonTai(S2,S1));
+
+
+        /* Độ dài */
+
+        showLog(doDaiChuoi(S));
+        showLog(doDaiChuoi(S1));
+        showLog(doDaiChuoi(S2));
+        showLog(doDaiChuoi(S4));
+        showLog(doDaiChuoi(S5));
+
+
+        showLog(kiemTra(S1234,S5));
+    </script>
+</body>
+
+</html>
